@@ -1,1 +1,29 @@
-/* add custom styles */
+body {
+  font-family: arial;
+
+}
+
+h1 {
+  font-size: 8em;
+}
+
+.page-titles {
+  text-align: center;
+  word-wrap: break-word;
+
+}
+
+.titles {
+  padding-top: 14%;
+}
+
+.background {
+  position: relative;
+  background-color: #ffea94;
+  height: 100vh;
+  margin: 3em;
+  z-index: 0;
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
