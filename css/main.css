@@ -1,11 +1,20 @@
+/* overall css */
 body {
-  font-family: arial;
+  font: bolder arial;
 
 }
 
 h1 {
-  font-size: 8em;
+  font-weight: bolder;
+  font-size: 126px;
 }
+
+h3 {
+  font-size: 16px;
+}
+
+
+/* background panel and page titles*/
 
 .page-titles {
   text-align: center;
@@ -20,7 +29,8 @@ h1 {
 .background {
   position: relative;
   background-color: #ffea94;
-  height: 100vh;
+  height: 85vh;
+  width: 93%;
   margin: 3em;
   z-index: 0;
     -webkit-box-sizing: border-box;
@@ -28,11 +38,13 @@ h1 {
           box-sizing: border-box;
 }
 
+
+/*DOMINIC MUTTEL header*/
 .name-head {
-  z-index: 1;
   position: fixed;
   top: 1.9em;
   left: 1.6em;
+  z-index: 1;
 
 }
 
@@ -44,3 +56,21 @@ h1 {
   font-size: 2em;
   padding: 0 .25em 0 0;
 }
+
+/* specialties header */
+
+.specialties {
+  z-index: 2;
+  position: fixed;
+  top: 24em;
+  left: -3.4em;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+}
+
+.specialty-hyphen {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
