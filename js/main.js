@@ -1,5 +1,10 @@
 // add scripts
 
 $(document).on('ready', function() {
-  console.log('sanity check!');
+
+
+  // var clientHeight = $( window ).height();
+  // $('.background').css('height', clientHeight);
+
+
 });
