@@ -1,16 +1,17 @@
 /* overall css */
 body {
-  font: bolder arial;
-
+  font-family: 'Arial Black', arial;
 }
 
 h1 {
-  font-weight: bolder;
-  font-size: 126px;
+  font-family: 'Arial Black';
+  font-size: 8em;
+  color: white;
 }
 
 h3 {
-  font-size: 16px;
+  font-family: arial;
+  font-size: 24px;
 }
 
 
@@ -23,29 +24,50 @@ h3 {
 }
 
 .titles {
-  padding-top: 14%;
+  position: relative;
+  padding-top: 10vh;
+  padding-right: 5em; /*added*/
+  padding-left: 5em; /*added*/
+     background: url(http://49.media.tumblr.com/75c726fa4d766e2eb3c6980fe4f96793/tumblr_nczxck9NK71qfrhqho1_1280.gif) no-repeat;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 
 .background {
-  position: relative;
+  position: relative; /* <--toggle and mark which is best position:*/
   background-color: #ffea94;
   height: 85vh;
-  width: 93%;
+  width: 90%;
   margin: 3em;
   z-index: 0;
-    -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              animation-name: fadein;
+              animation-duration: 2s;
+  animation-timing-function: ease-in;
+
+}
+
+@keyframes fadein {
+    0%   {background-color: white;}
+    100% {background-color: #ffea94;}
 }
 
 
 /*DOMINIC MUTTEL header*/
 .name-head {
   position: fixed;
-  top: 1.9em;
-  left: 1.6em;
+  top: 1.8em;
+  left: 1em;
   z-index: 1;
+     animation-duration: 3s;
+  animation-name: namemove;
+}
 
+@-webkit-keyframes namemove {
+    from {left: -600px;}
+    to {right: 300px;}
 }
 
 .last-name {
@@ -53,20 +75,21 @@ h3 {
 }
 
 .name-letters {
-  font-size: 2em;
-  padding: 0 .25em 0 0;
+  font-family: arial;
+  font-size: 34px;
+  padding-left: .25em;
 }
 
 /* specialties header */
 
 .specialties {
   z-index: 2;
-  position: fixed;
-  top: 24em;
-  left: -3.4em;
-  -ms-transform: rotate(-90deg); /* IE 9 */
-  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-  transform: rotate(-90deg);
+  position: absolute;
+  top: 35vh;
+  left: -5.2em;
+      -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .specialty-hyphen {
