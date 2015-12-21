@@ -21,17 +21,24 @@ h3 {
   text-align: center;
   word-wrap: break-word;
 
+
 }
+
 
 .titles {
   position: relative;
   padding-top: 10vh;
-  padding-right: 5em; /*added*/
-  padding-left: 5em; /*added*/
+ /* padding-right: 5em; added
+  padding-left: 5em;*/ /*added*/
      background: url(http://49.media.tumblr.com/75c726fa4d766e2eb3c6980fe4f96793/tumblr_nczxck9NK71qfrhqho1_1280.gif) no-repeat;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+
 }
+
+/*.portfolio-title {
+  animation: move 2s alternate infinite linear;
+}*/
 
 .background {
   position: relative; /* <--toggle and mark which is best position:*/
@@ -45,7 +52,7 @@ h3 {
               box-sizing: border-box;
               animation-name: fadein;
               animation-duration: 2s;
-  animation-timing-function: ease-in;
+  /*animation-timing-function: ease-in;*/
 
 }
 
@@ -86,14 +93,55 @@ h3 {
   z-index: 2;
   position: absolute;
   top: 35vh;
-  left: -5.2em;
+  left: -4.6em;
       -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
 
-.specialty-hyphen {
-  padding-left: 4px;
-  padding-right: 4px;
+.specialty-type {
+  background-size: 120%;
 }
 
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FFB5C5;
+    background-color: white;
+}
+
+/* selected link */
+a:active {
+    color: black;
+    text-decoration: line-through;
+}
+
+/*social media icons*/
+
+.social-media {
+  z-index: 3;
+  position: fixed;
+  bottom: 1.2em;
+  right: 4em;
+}
+
+path {
+  color: white;
+  fill
+}
+/*#Layer_1 {
+  fill: #94d31b;
+}*/
+
+/*.social:hover {
+  fill: #ace63c;
+}*/

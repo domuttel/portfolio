@@ -7,18 +7,57 @@
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
   </head>
   <body>
   <div class="background">
     <div class="page-titles">
-      <div class="portfolio-title titles"><h1>PORTFOLIO</h1></div>
-<!--  <div class="web-title titles"><h1>WEB</h1></div>
-      <div class="art-title titles"><h1>ART</h1></div>
-      <div class="design-title titles"><h1>DESIGN</h1></div> -->
+      <div class="portfolio-title titles">
+        <h1>PORTFOLIO</h1>
+      </div>
+      <div class="web-title titles">
+        <a data-slide-index="0" href="">
+          <h1>WEB</h1>
+          <div class="web-port">
+            <ul id="web-projects">
+              <li>Lin-quiz-tics</li>
+              <li>ARCHiTREK</li>
+              <li>Wordcloud</li>
+              <li>in progress - Pirate Art Gallery website</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="art-title titles">
+        <a data-slide-index="1" href="">
+          <h1>ART</h1>
+          <div class="art-port">
+            <ul id="art-projects">
+              <li>Television Vernacular</li>
+              <li>The Grass is Greener</li>
+              <li>Noesis / Landscape</li>
+              <li>Remote Patterns</li>
+              <li>Meetings in Hollywood</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="design-title titles">
+        <a data-slide-index="2" href="">
+          <h1>DESIGN</h1>
+          <div class="design-port">
+            <ul id="design-projects">
+              <li>Identity</li>
+              <li></li>
+              <li>POP Quiz</li>
+            </ul>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 
-  <div class="name-head">
+  <div id="name" class="name-head">
     <span class="first-name">
       <span class="name-letters">D</span>
       <span class="name-letters">O</span>
@@ -38,21 +77,27 @@
     </span>
   </div>
 
+
   <div class="specialties">
-    <div class="specialities-titles">
+    <div class="specialities-titles bxslider">
       <h3>
-        <span class="specialty-type">WEB</span>
+        <span id="web" class="specialty-type"><a>WEB</a></span>
         <span class="specialty-hyphen">-</span>
-        <span class="specialty-type">DESIGN</span>
+        <span id="design" class="specialty-type"><a>DESIGN</a></span>
         <span class="specialty-hyphen">-</span>
-        <span class="specialty-type">ART</span>
+        <span id="art" class="specialty-type"><a>ART</a></span>
       </h3>
     </div>
+  </div>
+  <div class="social-media">
+      <img class="social" src="images/twitter_circle.svg" alt="twitter">
+      <img class="social" src="images/linkedin_circle.svg" alt="linkedin">
+      <img class="social" src="images/github_circle.svg" alt="github">
   </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
   </body>
