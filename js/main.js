@@ -1,42 +1,34 @@
 
-$(document).on('ready', function(e){
+$(document).on('ready', function(){
+  $('#web-projects').bxSlider({
+    slideWidth: 300,
+    minSlides: 2,
+    maxSlides: 2,
+    slideMargin: 100
+});
 
-  // $('#web-projects','#art-projects','#design-projects').bxSlider({
-  //   mode: 'horizontal',
-  //   useCSS: true,
-  //   minSlides: 3,
-  //   maxSlides: 3,
-  //   slideWidth: 360,
-  //   slideMargin: 10
-  // });
+});
 
   var slider = $('.page-titles').bxSlider({
     mode: 'horizontal',
     pager: false,
+    controls: false,
+    useCSS: true,
   });
 
-  $('#web').click(function(e){
+  $('#web').click(function(){
     slider.goToSlide(1);
-    e.preventDefault();
     return false;
   });
-  $('#design').click(function(e){
-    slider.goToSlide(3);
-    e.preventDefault();
-    return false;
-  });
-  $('#art').click(function(e){
+  $('#design').click(function(){
     slider.goToSlide(2);
-    e.preventDefault();
     return false;
   });
-  $('#name').click(function(e){
+  $('#art').click(function(){
+    slider.goToSlide(3);
+    return false;
+  });
+  $('#name').click(function(){
     slider.goToSlide(0);
-    e.preventDefault();
     return false;
   });
-
-  e.preventDefault();
-});
-
-

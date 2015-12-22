@@ -609,9 +609,9 @@
 			slider.pagerEl.html(pagerHtml);
 		}
 
-
-		//  * Appends the pager to the controls element
-		//  */
+		/**
+		 * Appends the pager to the controls element
+		 */
 		var appendPager = function(){
 			if(!slider.settings.pagerCustom){
 				// create the pager DOM element
