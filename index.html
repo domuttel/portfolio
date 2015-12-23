@@ -5,9 +5,10 @@
     <title>Dominic Muttel</title>
 
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
   </head>
   <body>
   <div class="background">
@@ -19,14 +20,12 @@
           <h1>WEB</h1>
           <div class="web-port">
             <div id="web-projects">
-              <div><img src="images/github_circle.svg"></div>
-              <div><img src="images/linkedin.svg"></div>
-              <div><img src="images/twitter.svg"></div>
-              <div><img src="images/github.svg"></div>
-              <div><img src="images/github_circle.svg"></div>
-              <div><img src="images/linkedin.svg"></div>
-              <div><img src="images/twitter.svg"></div>
-              <div><img src="images/github.svg"></div>
+              <div><a href="http://www.domuconcept.com/"><img src="images/linquiz.svg"></a></div>
+              <div><a id="demo01" href="#animatedModal"><img src="images/other.svg"></a></div>
+              <div><img src="images/linquiz.svg"></div>
+              <div><img src="images/other.svg"></div>
+              <div><img src="images/linquiz.svg"></div>
+              <div><img src="images/other.svg"></div>
             </div>
           </div>
         </a>
@@ -55,9 +54,9 @@
     </div>
   </div>
 
+<a>
   <div id="name" class="name-head">
     <span class="first-name">
-    <a>
       <span class="name-letters">D</span>
       <span class="name-letters">O</span>
       <span class="name-letters">M</span>
@@ -73,9 +72,9 @@
       <span class="name-letters">T</span>
       <span class="name-letters">E</span>
       <span class="name-letters">L</span>
-      </a>
     </span>
   </div>
+</a>
 
 
   <div class="specialties">
@@ -95,10 +94,26 @@
       <img class="social" src="images/github_circle.svg" alt="github">
   </div>
 
+    <!-- ************ Modals ************ -->
+          <!--Modal-->
+    <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div  id="btn-close-modal" class="close-animatedModal">
+            CLOSE MODAL
+        </div>
+
+        <div class="modal-content">
+            <!--Your modal content goes here-->
+        </div>
+    </div>
+  <!-- ************ End Modals ************ -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     <script src="js/jquery.bxslider.js"></script>
-
     <script type="text/javascript" src="js/main.js"></script>
+
+
+    <script src="js/animatedModal.js"></script>
+
   </body>
 </html>
