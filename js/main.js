@@ -7,9 +7,7 @@ $(document).on('ready', function(){
     slideMargin: 10
   });
 
-  $("#demo01").animatedModal({
-    modalTarget:'modal-02'
-  });
+  $("#demo01").animatedModal();
 });
 
 

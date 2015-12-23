@@ -21,7 +21,7 @@
             left:'0px',
             zIndexIn: '9999',
             zIndexOut: '-9999',
-            color: 'rgba(204, 204, 204, 0.4)',
+            color: 'rgba(204, 204, 204, 0.9)',
             opacityIn:'1',
             opacityOut:'0',
             animatedIn:'zoomIn',
