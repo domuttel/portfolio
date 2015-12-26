@@ -20,12 +20,17 @@
   .container {
     position: relative;
     width: 100%;
+    max-width: 1920px;
     height: 100%;
+    max-height: 1080px;
     margin: 0 auto;
   }
 
   .all-content {
     width: 100%;
+    max-width: 1024px;
+    height: 100%;
+    max-height: 780px;
     margin-left: auto ;
     margin-right: auto ;
   }
@@ -57,10 +62,13 @@
     position: relative; /* <--toggle and mark which is best position:*/
     background-color: #ffea94;
     height: 90%;
-    max-height: 800px;
+/*    max-height: 800px;*/
     width: 100%;
     max-width: 1024px;
-    margin: 3em auto;
+    margin-left: auto ;
+    margin-top: 5%;
+    margin-right: auto ;
+    margin-bottom: 5%;
     z-index: 0;
       /*overflow-x: hidden;*/
         -webkit-box-sizing: border-box;
@@ -83,7 +91,6 @@
     z-index: 3;
     bottom: 0;
     left: 70%;
-    max-width: 1024;
 
   }
 
@@ -91,8 +98,8 @@
   /*DOMINIC MUTTEL header*/
   .name-head {
     position: absolute;
-    top: 1.8em;
-    left: 1em;
+    top: 3%;
+    left: 10%;
     z-index: 1;
        animation-duration: 3s;
     animation-name: namemove;
