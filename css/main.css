@@ -3,7 +3,7 @@
 /* overall css */
   body {
     font-family: 'Arial Black', arial;
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
 
   h1 {
@@ -89,8 +89,8 @@
   .social-media {
     position: absolute;
     z-index: 3;
-    bottom: 0;
-    left: 70%;
+    bottom: -40px;
+    right: -35px;
 
   }
 
@@ -98,8 +98,8 @@
   /*DOMINIC MUTTEL header*/
   .name-head {
     position: absolute;
-    top: 3%;
-    left: 10%;
+    top: -20px;
+    left: -36px;
     z-index: 1;
        animation-duration: 3s;
     animation-name: namemove;
@@ -125,8 +125,8 @@
   .specialties {
     z-index: 2;
     position: absolute;
-    top: 35vh;
-    left: -4.6em;
+    top: 40%;
+    left: -7.75em;
         -ms-transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
