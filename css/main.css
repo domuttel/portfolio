@@ -1,6 +1,7 @@
 /* overall css */
 body {
   font-family: 'Arial Black', arial;
+  overflow: hidden;
 }
 
 h1 {
@@ -41,12 +42,13 @@ h3 {
 }*/
 
 .background {
-  position: relative; /* <--toggle and mark which is best position:*/
+  position: absolute; /* <--toggle and mark which is best position:*/
   background-color: #ffea94;
-  height: 85vh;
+  height: 90vh;
   width: 90%;
   margin: 3em;
   z-index: 0;
+    /*overflow-x: hidden;*/
       -webkit-box-sizing: border-box;
          -moz-box-sizing: border-box;
               box-sizing: border-box;

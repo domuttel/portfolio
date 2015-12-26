@@ -1,13 +1,13 @@
 
 $(document).on('ready', function(){
-  $('#web-projects').bxSlider({
+  $('.projects').bxSlider({
     slideWidth: 200,
     minSlides: 3,
     maxSlides: 3,
     slideMargin: 10
   });
 
-  $("#demo01").animatedModal();
+
 });
 
 
