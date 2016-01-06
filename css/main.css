@@ -1,9 +1,14 @@
 /* Computer Screen*/
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
 /* overall css */
+
   body {
     font-family: 'Arial Black', arial;
-    /*overflow: hidden;*/
+    cursor: crosshair;
+    overflow: scroll;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   h1 {
@@ -16,83 +21,92 @@
     font-family: arial;
     font-size: 24px;
   }
+  h4 {
+    color: white;
+    font-size: 2em;
+  }
+
 
   .container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     position: relative;
-    width: 100%;
-    max-width: 1920px;
+    overflow: hidden;
     height: 100%;
-    max-height: 1080px;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .all-content {
-    width: 100%;
-    max-width: 1024px;
-    height: 100%;
-    max-height: 780px;
-    margin-left: auto ;
-    margin-right: auto ;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
   }
 
   /* background panel and page titles*/
 
   .page-titles {
+    margin-top: -80px;
     text-align: center;
     word-wrap: break-word;
   }
 
-
   .titles {
     position: relative;
-    padding-top: 10vh;
-   /* padding-right: 5em; added
-    padding-left: 5em;*/ /*added*/
     background: url(http://49.media.tumblr.com/75c726fa4d766e2eb3c6980fe4f96793/tumblr_nczxck9NK71qfrhqho1_1280.gif) no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
   }
 
-  /*.portfolio-title {
-    animation: move 2s alternate infinite linear;
-  }*/
+  .about {
+    /*padding: 20px;*/
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    color: black;
+    z-index: 200;
+    text-align: justify;
+
+    /*color: black;*/
+    /*background-color: rgba(255, 255, 255, 10);*/
+    position:relative;
+    margin: -80px auto 0px;
+    height: 285px;
+    width: 80%;
+    overflow: scroll;
+    border-radius: 30px;
+  }
+
 
   .background {
     position: relative; /* <--toggle and mark which is best position:*/
     background-color: #ffea94;
-    height: 90%;
-/*    max-height: 800px;*/
-    width: 100%;
-    max-width: 1024px;
-    margin-left: auto ;
-    margin-top: 5%;
-    margin-right: auto ;
-    margin-bottom: 5%;
+    max-height: 550px;
+    max-width: 1440px;
+    min-width: 950px ;
     z-index: 0;
-      /*overflow-x: hidden;*/
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-                box-sizing: border-box;
-                animation-name: fadein;
-                animation-duration: 2s;
-    /*animation-timing-function: ease-in;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    animation-name: fadein;
+    animation-duration: 2s;
   }
 
-  @keyframes fadein {
-      0%   {background-color: white;}
-      100% {background-color: #ffea94;}
-  }
 
   /*social media icons*/
 
   .social-media {
     position: absolute;
-    z-index: 3;
+    z-index: 10;
     bottom: -40px;
     right: -35px;
-
   }
+
+
 
 
   /*DOMINIC MUTTEL header*/
@@ -101,14 +115,12 @@
     top: -20px;
     left: -36px;
     z-index: 1;
-       animation-duration: 3s;
+    animation-duration: 3s;
     animation-name: namemove;
   }
 
-  @-webkit-keyframes namemove {
-      from {left: -600px;}
-      to {right: 300px;}
-  }
+
+
 
   .last-name {
     padding-left: 1.25em;
@@ -135,25 +147,38 @@
   .specialty-type {
     background-size: 120%;
   }
+} /* <---end large media */
 
   /* unvisited link */
   a:link {
-      color: black;
+    color: black;
   }
 
   /* visited link */
   a:visited {
-      color: white;
+    text-decoration: line-through;
   }
 
   /* mouse over link */
   a:hover {
-      color: #FFB5C5;
-/*      background-color: white;
-*/  }
+    color: #FFB5C5;
+    cursor: crosshair;
+  }
 
   /* selected link */
   a:active {
-      color: black;
-      text-decoration: line-through;
+    color: black;
+  }
+
+
+/* animation queries */
+
+  @keyframes fadein {
+      0%   {background-color: white;}
+      100% {background-color: #ffea94;}
+  }
+
+  @-webkit-keyframes namemove {
+      from {left: -600px;}
+      to {right: 300px;}
   }
